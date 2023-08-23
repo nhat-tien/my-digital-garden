@@ -90,6 +90,11 @@ Tables aren't part of the core  Markdown spec, but Hugo supports supports them o
   <p>Test</p>
 </body>
 </html>
+<!-- Xin chao-->
+```
+---
+```javascript
+const chaobuoisang = 23;
 ```
 
 #### Code block indented with four spaces

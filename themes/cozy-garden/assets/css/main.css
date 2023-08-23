@@ -33,6 +33,10 @@
     --link_color: #278501;
     --sharp_symbol_color: #C7C7C7;
     --quoteblock_background_color: #eeeded;
+    --table_border_color: #adadad;
+    --table_even_row_background_color: #f2f2f2;
+    --table_heading_background_color: #c3eac1;
+    --table_heading_text_color: #303030;
 }
 
 /*
@@ -40,12 +44,16 @@
 */
 .dark-theme {
     --background_color: #18181b;
-    --text_color: #ffffff;
+    --text_color: #d9d9d9;
     --icon_floatmenu_color: #d3d3d3;
-    --heading_color: #00fd65;
+    --heading_color: #00b347;
     --link_color: #00fd65;
     --sharp_symbol_color: #414141;
     --quoteblock_background_color: #353535;
+    --table_border_color: #5e5e5e;
+    --table_even_row_background_color: #403b3b;
+    --table_heading_background_color: #2b462a;
+    --table_heading_text_color: #e2e1e1;
 }
 /* -------------------------------- */
 
@@ -72,7 +80,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather';
-    margin-top: 0.7em;
+    margin: 0.5em 0;
     color: var(--heading_color);
     font-weight: 700;
 }
@@ -92,6 +100,30 @@ ul, ol {
 }
 
 /*
+*  --------     TABLE   -------
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--table_even_row_background_color);
+}
+
+table td, table th {
+    border: 1.5px solid var(--table_border_color);
+    padding: 0.2em
+}
+
+table th {
+    padding: 0.3em;
+    background-color: var(--table_heading_background_color);
+    color: var(--table_heading_text_color);
+}
+
+
+/*
 *  --------     HIGHLIGHT   -------
 */
 .chroma {
@@ -102,9 +134,9 @@ ul, ol {
     border-radius: 5px;
 }
 
-code {
+.chroma code {
     font-family: 'Cascadia Code';
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 /*
