@@ -1,0 +1,220 @@
+/*
+*  --------     FONT      -------
+*/
+@font-face {
+    font-family: 'Source Sans';
+    src: url('../fonts/SourceSans3-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Oleo Script';
+    src: url('../fonts/OleoScript-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode.ttf');
+    font-family: 400;
+}
+
+:root {
+    --background_color: #ffffff;
+    --text_color: #000000;
+    --icon_floatmenu_color: #474747;
+    --heading_color: #026a00;
+    --link_color: #278501;
+    --sharp_symbol_color: #C7C7C7;
+    --quoteblock_background_color: #eeeded;
+}
+
+/*
+*  --------     DARK THEME   -------
+*/
+.dark-theme {
+    --background_color: #18181b;
+    --text_color: #ffffff;
+    --icon_floatmenu_color: #d3d3d3;
+    --heading_color: #00fd65;
+    --link_color: #00fd65;
+    --sharp_symbol_color: #414141;
+    --quoteblock_background_color: #353535;
+}
+/* -------------------------------- */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Source Sans';
+    max-width: 85ch;
+    margin: 0 auto;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: var(--background_color);
+    color: var(--text_color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather';
+    margin-top: 0.7em;
+    color: var(--heading_color);
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0.5em; 
+}
+
+hr {
+    margin: 10px auto;
+    width: 60%;
+}
+
+ul, ol {
+    margin-top: 0.5em; 
+    list-style-position: inside;
+}
+
+/*
+*  --------     HIGHLIGHT   -------
+*/
+.chroma {
+    width: 100%;
+    overflow-x: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+code {
+    font-family: 'Cascadia Code';
+    font-size: 0.8rem;
+}
+
+/*
+*  --------     BLOCKQUOTE   -------
+*/
+blockquote {
+    background-color: var(--quoteblock_background_color);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+blockquote::before {
+    content: '“';
+    font-size: 4rem;
+    color: #909090;
+}
+blockquote p {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+
+/*
+*  --------     LINK   -------
+*/
+a {
+    text-decoration: none;
+}
+.link {
+    text-decoration: underline;
+    color: var(--link_color);
+}
+/*
+*  --------     IMAGE   -------
+*/
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*
+*  --------     LIST   -------
+*/
+
+ul, ol {
+    padding-left: 1.3em;
+}
+
+/*
+*  --------     HEADER      -------
+*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__home {
+    font-family: 'Oleo Script';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--heading_color);
+}
+
+/*
+*  --------     FOOTER      -------
+*/
+footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--link_color);
+}
+
+/*
+*  --------     FLOAT MENU   -------
+*/
+
+.float-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    width: min-content;
+    border-radius: 5px;
+    background: rgba(34, 247, 80, 0.4);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+}
+
+.float-menu__item {
+    display: flex;
+    place-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+.float-menu__item:first-of-type {
+    border-bottom: 1px solid #909090;
+    padding: 10px;
+}

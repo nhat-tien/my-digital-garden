@@ -1,0 +1,33 @@
+baseURL = "https://nhattiengarden.netlify.app"
+theme = 'cozy-garden'
+title = "Cozy Garden"
+languageCode = "vi-VN"
+
+ignoreFiles = [
+    "/content/.obsidian/*",
+    "/content/template/*",
+    "/content/manage/*",
+]
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+enableEmoji = true
+
+[params]
+  favicon = "/images/favicon.png"
+  dateFormat = "02-01-2006"
+
+[markup]
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+    lineNumbersInTable = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[permalinks]
+  [permalinks.page]
+    garden = '/garden/:filename/'
+    
