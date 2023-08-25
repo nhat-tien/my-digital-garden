@@ -4,7 +4,8 @@ date: 2023-08-19
 lastmod: 2023-08-23
 description:
 stage: seedling  
-tags:
+tags: 
+- seedling
 - editor
 ---
 - Một editor mới nổi, khá giống NeoVim, dùng trong terminal.

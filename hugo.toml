@@ -23,6 +23,7 @@ enableEmoji = true
     lineNos = true
     noClasses = false
     lineNumbersInTable = false
+    guessSyntax = true
   [markup.goldmark]
     [markup.goldmark.renderer]
         unsafe = true

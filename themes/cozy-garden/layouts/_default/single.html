@@ -1,6 +1,9 @@
 {{ define "main" }}
 {{ if not .Params.main }}
 <h1>{{ .Title }}</h1>
+<div class="">
+
+</div>
 <p>
   <i>
     <time datetime='{{ .Date.Format "02-01-2006" }}' pubdate>
@@ -8,12 +11,12 @@
     </time>
   </i>
 </p>
-<div class="tag"> 
+<div class="tag">
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}" class="tag__item">#{{ .LinkTitle }}</a>
   {{ end }}
 </div>
 <div class=""></div>
 {{ end }}
-  {{ .Content }}
+{{ .Content }}
 {{ end }}
