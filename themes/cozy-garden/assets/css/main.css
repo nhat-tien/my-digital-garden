@@ -38,6 +38,7 @@
   --table_heading_background_color: #c3eac1;
   --table_heading_text_color: #303030;
   --hr_color: #afafaf;
+  --code_background_color: #e7e4e4;
 }
 
 /*
@@ -56,6 +57,7 @@
   --table_heading_background_color: #2b462a;
   --table_heading_text_color: #e2e1e1;
   --hr_color: #4b4848;
+  --code_background_color: #3d3d3d;
 }
 
 /* -------------------------------- */
@@ -72,7 +74,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans';
+  font-family: 'Source Sans', sans-serif;
   max-width: 85ch;
   margin: 0 auto;
   padding-left: 0.7rem;
@@ -86,11 +88,22 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Merriweather';
+  font-family: 'Merriweather', serif;
   margin: 0.5em 0;
   color: var(--heading_color);
   font-weight: 700;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
 
 p {
   margin-top: 0.5em;
@@ -136,17 +149,27 @@ table th {
 /*
 *  --------     HIGHLIGHT   -------
 */
+code {
+  font-family: 'Cascadia Code';
+  display: inline-block;
+  padding: 0 0.5em;
+  background-color: var(--code_background_color);
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
 .chroma {
   width: 100%;
   overflow-x: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-radius: 5px;
 }
 
 .chroma code {
-  font-family: 'Cascadia Code';
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  padding: 0;
+  background-color: inherit;
 }
 
 /*
@@ -161,11 +184,6 @@ blockquote {
   flex-direction: row;
 }
 
-blockquote::before {
-  content: '“';
-  font-size: 4rem;
-  color: #909090;
-}
 
 blockquote p {
   margin-top: 0;
