@@ -6,6 +6,10 @@ description: Sample article showcasing basic Markdown syntax and formatting for 
 tags:
   - markdown
   - syntax
+  - digital Garden
+  - Xin chao
+  - rat la nhieu
+  - tag nay
 ---
 
 For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
@@ -16,11 +20,9 @@ Xin chào mọi người rất cảm ơn.
  
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 <!--more-->
-[Hướng dẫn tham quan cho khu vườn của mình](./huong-dan-danh-cho-khach-den-tham)
+[Link 1](../garden/scale-va-chord)
 
-[Hướng dẫn tham quan cho khu vườn của mình](garden/huong-dan-danh-cho-khach-den-tham)
-
-[Helix editor](garden/helix-editor)
+[link 2](../garden/helix-editor)
 
 ## Headings
 

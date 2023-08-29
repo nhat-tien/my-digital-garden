@@ -1,38 +1,55 @@
 {{ define "main" }}
-<content>
   {{ if .Data.Singular }}
-  <h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
+  <h3 style="margin-bottom:0">Những note có tag "{{ .Title }}"</h3>
   <small>
-    <a href="{{ "blog" | relURL }}">Remove filter</a>
+    <a href="{{ "garden" | relURL }}">Bỏ lọc</a>
   </small>
+  {{else}}
+  <h2>Khu vườn nhỏ của mình</h2>
   {{ end }}
-  <ul class="blog-posts">
-    {{ range .Pages.ByLastmod }}
-    <li>
-      <span>
+  <div class="blog-posts">
+    {{ range .Pages.ByLastmod.Reverse }}
+    <div class="post">
+      <a href="{{ .Permalink }}">
+        <h4>
+        {{ if eq .Params.stage "seedling"}}
+        🌱
+        {{end}}
+        {{ if eq .Params.stage "budding"}}
+        🌿
+        {{ end}}
+        {{ if eq .Params.stage "evergreen"}}
+        🌲
+        {{ end}}
+          {{.Title}}
+        </h4>
+      </a>
+      <div>
+        Last modified:
         <i>
-          <time datetime='{{ .Date.Format "02-01-2006" }}' pubdate>
-            {{ .Date.Format (default "02-01-2006" .Site.Params.dateFormat) }}
+          <time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate>
+            {{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
           </time>
         </i>
-      </span>
-      <a class="link" href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ else }}
-    <li>
-      No posts yet
-    </li>
-    {{ end }}
-  </ul>
-  {{ if .Data.Singular }}
-  {{else}}
-    <small>
-      <div>
-        {{ range .Site.Taxonomies.tags }}
-        <a class="link" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+      </div>
+      <div style="margin-top: 5px;">
+        {{ range (.GetTerms "tags") }}
+          <a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>
         {{ end }}
       </div>
-    </small>
+    </div>
+    {{ else }}
+    <div>
+      No posts yet
+    </div>
     {{ end }}
-</content>
+  </div>
+  {{ if .Data.Singular }}
+  {{else}}
+      <div>
+        {{ range .Site.Taxonomies.tags }}
+        <a class="tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp;
+        {{ end }}
+      </div>
+    {{ end }}
 {{ end }}

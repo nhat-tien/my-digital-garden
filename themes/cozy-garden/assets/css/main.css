@@ -39,6 +39,9 @@
   --table_heading_text_color: #303030;
   --hr_color: #afafaf;
   --code_background_color: #e7e4e4;
+  --code_block_background_color: #1a1b26;
+  --tag_background_color: #8ad76a;
+  --tag_text_color: #000000;
 }
 
 /*
@@ -58,6 +61,9 @@
   --table_heading_text_color: #e2e1e1;
   --hr_color: #4b4848;
   --code_background_color: #3d3d3d;
+  --code_block_background_color: #24283b;
+  --tag_background_color: #426832;
+  --tag_text_color: #eeeded;
 }
 
 /* -------------------------------- */
@@ -118,7 +124,15 @@ hr {
 ul,
 ol {
   margin-top: 0.5em;
-  list-style-position: inside;
+  list-style-position: outside;
+}
+
+a {
+  color: inherit;
+}
+
+a[target="_blank"]:after {
+  content: "↗";
 }
 
 /*
@@ -150,7 +164,7 @@ table th {
 *  --------     HIGHLIGHT   -------
 */
 code {
-  font-family: 'Cascadia Code';
+  font-family: 'Cascadia Code', monospace;
   display: inline-block;
   padding: 0 0.5em;
   background-color: var(--code_background_color);
@@ -283,4 +297,69 @@ footer a {
 .float-menu__item:first-of-type {
   border-bottom: 1px solid #909090;
   padding: 10px;
+}
+
+/*
+*  --------     TAG   -------
+*/
+
+.tag {
+  display: inline-block;
+  text-transform:capitalize;
+  font-size: 0.9rem;
+  padding: 3px 0.5em;
+  background-color: var(--tag_background_color);
+  color: var(--tag_text_color);
+  border-radius: 0.5em;
+  margin-bottom: 5px;
+}
+
+/*
+*  --------     FRONTMATTER   -------
+*/
+
+.frontmatter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.frontmatter__key {
+  font-size: 0.9rem;
+}
+
+/*
+*  --------     STAGE   -------
+*/
+
+.stage {
+  padding: 0 0.3em;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.stage--seedling {
+  background-color: #a6fdc9;
+  color: #000000;
+}
+.stage--budding {
+  background-color: #9dfdad;
+  color: #000000;
+}
+.stage--evergreen {
+  background-color: #7fdc94;
+  color: #000000;
+}
+
+/*
+*    ----- POST ------
+*/
+
+.post {
+  padding: 8px 5px;
+  border: 1px solid var(--table_border_color);
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
