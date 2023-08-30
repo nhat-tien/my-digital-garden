@@ -12,7 +12,7 @@ Trang blog này mình vẫn đang thử nghiệm với cấu trúc của một *
 ### Thông tin cơ bản
 - Hiện là sinh viên CNTT
 - Thích tìm hiểu đủ thứ
-### 🧡 Những thứ mình quan tâm
+### Những thứ mình quan tâm
 - Lập trình
 - Sản xuất âm nhạc
 - Triết học
