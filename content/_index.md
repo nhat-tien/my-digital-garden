@@ -4,10 +4,8 @@ main: true
 ---
 
 # 🏡
+
 ## Các trang MOC
-- [About](./about)
-- [Now](./now)     
-- [Garden](./garden)
-- [huong dan](./garden/huong-dan-danh-cho-khach-den-tham)
 
-
+## Clean code
+- [Clean Code](../garden/00clean-code)
