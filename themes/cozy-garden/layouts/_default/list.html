@@ -34,7 +34,9 @@
       </div>
       <div style="margin-top: 5px;">
         {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>
+          <a href="{{ .Permalink }}" class="tag {{ if eq .LinkTitle "moc"}}tag--moc{{end}}">
+            {{ .LinkTitle }}
+          </a>
         {{ end }}
       </div>
     </div>
@@ -48,7 +50,7 @@
   {{else}}
       <div>
         {{ range .Site.Taxonomies.tags }}
-        <a class="tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp;
+        <a class="tag {{ if eq .Page.Title "moc"}}tag--moc{{end}}" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp;
         {{ end }}
       </div>
     {{ end }}

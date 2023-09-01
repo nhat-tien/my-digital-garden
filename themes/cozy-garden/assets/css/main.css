@@ -42,6 +42,7 @@
   --code_block_background_color: #1a1b26;
   --tag_background_color: #c3eac1;
   --tag_text_color: #000000;
+  --tag_moc_bg_color: #efbc89;
 }
 
 /*
@@ -64,6 +65,7 @@
   --code_block_background_color: #24283b;
   --tag_background_color: #2b462a;
   --tag_text_color: #eeeded;
+  --tag_moc_bg_color: #56422d;
 }
 
 /* -------------------------------- */
@@ -308,13 +310,18 @@ footer a {
 
 .tag {
   display: inline-block;
-  text-transform:capitalize;
+  text-transform: capitalize;
   font-size: 0.9rem;
   padding: 3px 0.5em;
   background-color: var(--tag_background_color);
   color: var(--tag_text_color);
   border-radius: 0.5em;
   margin-bottom: 5px;
+}
+
+.tag--moc {
+  background-color: var(--tag_moc_bg_color);
+  text-transform: uppercase;
 }
 
 /*
@@ -331,10 +338,6 @@ footer a {
   gap: 0.5em;
   font-size: 0.86rem;
 }
-
-/* .frontmatter__key {
-  font-size: 0.9rem;
-} */
 
 /*
 *  --------     STAGE   -------
