@@ -14,6 +14,6 @@ Trang blog này mình vẫn đang thử nghiệm với cấu trúc của một *
 - Thích tìm hiểu đủ thứ
 ### Những thứ mình quan tâm
 - Lập trình
-- Sản xuất âm nhạc
+- Âm nhạc
 - Triết
 - ...(và có lẽ còn nhiều hơn nữa, mình sẽ bổ sung sau)

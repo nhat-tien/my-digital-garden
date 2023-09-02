@@ -125,7 +125,7 @@ hr {
 
 ul,
 ol {
-  margin-top: 0.5em;
+  margin-top: 0.8em;
   list-style-position: outside;
 }
 
@@ -220,9 +220,11 @@ a {
 *  --------     IMAGE   -------
 */
 img {
-  width: 100%;
-  object-fit: cover;
+  max-width: 100%;
   border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 figcaption {

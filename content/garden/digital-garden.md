@@ -5,7 +5,7 @@ lastmod: 2023-08-23
 description:
 stage: seedling 
 tags:
-- digital garden
+- digital-garden
 ---
 
 [A Brief History & Ethos of the Digital Garden (maggieappleton.com)](https://maggieappleton.com/garden-history)
