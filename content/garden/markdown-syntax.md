@@ -91,18 +91,6 @@ const chaobuoisang = 23;
 #### Code block indented with four spaces
 
 #### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
 
 ## List Types
 

@@ -22,8 +22,8 @@
     <div class="frontmatter__key">Ngày tạo</div>
     <div class="frontmatter__value">
       <i>
-        <time datetime='{{ .Date.Format "02/01/2006" }}' pubdate>
-          {{ .Date.Format (default "02/01/2006" .Site.Params.dateFormat) }}
+        <time datetime='{{ .Date.Format "02-01-2006" }}' pubdate>
+          {{ .Date.Format (default "02-01-2006" .Site.Params.dateFormat) }}
         </time>
       </i>
     </div>
@@ -38,7 +38,7 @@
       </i>
     </div>
   </div>
-  <div class="frontmatter">
+  <div class="frontmatter frontmatter--tags">
       <div class="frontmatter__key">Tags</div>
       <div class="frontmatter__value">
       {{ range (.GetTerms "tags") }}
@@ -49,7 +49,8 @@
     </div>
   </div>
 </div>
-<hr>
+<div class="divider"></div>
 {{ end }}
+{{ partial "toc.html" . }}
 {{ .Content }}
 {{ end }}

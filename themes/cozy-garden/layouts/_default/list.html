@@ -30,9 +30,9 @@
         </h4>
       </a>
       <div>
-        Last modified:
+        Chỉnh sửa gần nhất:
         <i>
-          <time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate>
+          <time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>
             {{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
           </time>
         </i>

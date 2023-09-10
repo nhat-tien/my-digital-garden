@@ -1,9 +1,10 @@
 ---
 title: 
-date: {{date}}
-lastmod: {{date}}
-description:
-stage: seedling  || budding || evergreen 
-tags:
+date: 
+lastmod: 
+description: 
+stage: seedling
 draft: true
+toc: false
+tags: []
 ---

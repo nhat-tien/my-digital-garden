@@ -1,11 +1,6 @@
 /*
 *  --------     FONT      -------
 */
-@font-face {
-  font-family: 'Source Sans';
-  src: url('../fonts/SourceSans3-Regular.ttf');
-  font-weight: normal;
-}
 
 @font-face {
   font-family: 'Oleo Script';
@@ -22,6 +17,13 @@
 @font-face {
   font-family: 'Cascadia Code';
   src: url('../fonts/CascadiaCode.ttf');
+  font-family: 400;
+}
+
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab-Regular.ttf');
   font-family: 400;
 }
 
@@ -78,11 +80,11 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
-  font-family: 'Source Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   max-width: 85ch;
   margin: 0 auto;
   padding-left: 0.7rem;
@@ -131,6 +133,11 @@ ol {
 
 a {
   color: inherit;
+}
+
+.divider {
+  border: 0.1px solid var(--table_border_color);
+  margin: 5px auto;
 }
 
 
@@ -329,17 +336,41 @@ footer a {
 /*
 *  --------     FRONTMATTER   -------
 */
-.frontmatter-wrapper {
-  max-width: 300px;
-}
 
 .frontmatter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0.5em;
+  display: inline-block;
   font-size: 0.86rem;
+  margin-right: 10px;
+  margin-top: 5px;
 }
+
+.frontmatter__key {
+  display: inline-block;
+}
+
+.frontmatter__value {
+  display: inline-block;
+}
+
+.frontmatter--tags {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .frontmatter-wrapper {
+    width: 100%;
+  }
+  
+  .frontmatter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5em;
+    font-size: 0.86rem;
+  }
+
+}
+
 
 /*
 *  --------     STAGE   -------
@@ -356,10 +387,12 @@ footer a {
   background-color: #a6fdc9;
   color: #000000;
 }
+
 .stage--budding {
   background-color: #9dfdad;
   color: #000000;
 }
+
 .stage--evergreen {
   background-color: #7fdc94;
   color: #000000;
@@ -370,12 +403,33 @@ footer a {
 */
 
 .post {
-  padding: 8px 10px;
-  border: 1px solid var(--table_border_color);
+  padding: 8px 18px;
+  /* border: 1px solid var(--table_border_color); */
   border-radius: 10px;
   margin-bottom: 15px;
+  box-shadow: var(--table_border_color) 0px 6px 24px 0px, var(--table_border_color) 0px 0px 0px 1px;
 }
 
 .external-icon {
   width: 20px;
+}
+
+
+
+/*
+*    ----- TOC ------
+*/
+
+.toc {
+  background-color: var(--table_even_row_background_color);
+  padding: 1em;
+  width: 550px;
+}
+
+.toc li {
+  margin: 3px auto;
+}
+
+.toc__heading {
+  font-weight: 600;
 }
