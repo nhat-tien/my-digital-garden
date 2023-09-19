@@ -8,3 +8,6 @@ tags:
 - moc
 - music
 ---
+## Liên kết ngoài
+- [Các loại hợp âm - danh sách và sơ đồ](https://www.guitar-chord.org/chord-types.html)
+- 

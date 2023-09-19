@@ -18,5 +18,5 @@ Mình đã sử dụng [Hugo Bear Blog](https://github.com/janraasch/hugo-bearbl
 <img src="https://obsidian.md/images/obsidian-logo-gradient.svg" width="150" />
 
 Những plugin mình dùng trong Content Vault:
-- **Front Matter Title**: Đưa ra gợi ý link bằng giá trị title trong frontmatter thay vì filename (Vì filename của những tệp markdown mình thường để dưới dạng chuỗi không dấu và space sẽ thay bằng kí tự "-").
+- **Outliner**: Thao tác kéo thả với mục danh sách.
 - **Editor Syntax Highlight**: Tô sáng cú pháp cho Codeblock.

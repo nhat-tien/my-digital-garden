@@ -34,7 +34,6 @@
   --heading_color: #026a00;
   --link_color: #278501;
   --sharp_symbol_color: #C7C7C7;
-  --quoteblock_background_color: #eeeded;
   --table_border_color: #adadad;
   --table_even_row_background_color: #f2f2f2;
   --table_heading_background_color: #c3eac1;
@@ -57,7 +56,6 @@
   --heading_color: #00b347;
   --link_color: #00fd65;
   --sharp_symbol_color: #414141;
-  --quoteblock_background_color: #353535;
   --table_border_color: #5e5e5e;
   --table_even_row_background_color: #403b3b;
   --table_heading_background_color: #2b462a;
@@ -173,10 +171,10 @@ table th {
 code {
   font-family: 'Cascadia Code', monospace;
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0 0.3em;
   background-color: var(--code_background_color);
-  font-size: 0.9em;
-  border-radius: 5px;
+  font-size: 0.85em;
+  border-radius: 3px;
 }
 
 .chroma {
@@ -197,12 +195,9 @@ code {
 *  --------     BLOCKQUOTE   -------
 */
 blockquote {
-  background-color: var(--quoteblock_background_color);
-  border-radius: 5px;
   padding: 5px;
   margin-top: 0.5em;
-  display: flex;
-  flex-direction: row;
+  border-left: 2px solid var(--heading_color);
 }
 
 
@@ -405,10 +400,9 @@ footer a {
 
 .post {
   padding: 8px 18px;
-  /* border: 1px solid var(--table_border_color); */
+  border: 1px solid var(--table_border_color);
   border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: var(--table_border_color) 0px 6px 24px 0px, var(--table_border_color) 0px 0px 0px 1px;
 }
 
 .external-icon {
