@@ -7,5 +7,8 @@ stage: seedling
 tags:
 - digital-garden
 ---
+## Khái niệm
 
-[A Brief History & Ethos of the Digital Garden (maggieappleton.com)](https://maggieappleton.com/garden-history)
+
+## Xem thêm
+- [A Brief History & Ethos of the Digital Garden (maggieappleton.com)](https://maggieappleton.com/garden-history)

@@ -18,5 +18,6 @@ Mình đã sử dụng [Hugo Bear Blog](https://github.com/janraasch/hugo-bearbl
 <img src="https://obsidian.md/images/obsidian-logo-gradient.svg" width="150" />
 
 Những plugin mình dùng trong Content Vault:
+- **Front Matter Title**: Hiển thị gợi ý bằng thuộc tính title của ghi chú thay vì filename (vì mình thường để tên file dưới dạng chuỗi không dấu và nối bằng dấu gạch ngang "-").
 - **Outliner**: Thao tác kéo thả với mục danh sách.
 - **Editor Syntax Highlight**: Tô sáng cú pháp cho Codeblock.
