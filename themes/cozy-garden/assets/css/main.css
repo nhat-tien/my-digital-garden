@@ -89,7 +89,6 @@ body {
   padding-right: 0.7rem;
   background-color: var(--background_color);
   color: var(--text_color);
-  line-height: 1.5em;
 }
 
 h1,
@@ -128,6 +127,10 @@ ul,
 ol {
   margin-top: 0.8em;
   list-style-position: outside;
+}
+
+ul li, ol li {
+  margin-top: 0.3em;
 }
 
 a {
@@ -268,7 +271,7 @@ ol {
 */
 footer {
   margin-top: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 

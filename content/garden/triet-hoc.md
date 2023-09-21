@@ -5,7 +5,7 @@ lastmod: 2023-09-19
 description: 
 stage: seedling
 draft: false
-toc: false
+toc: true
 tags:
   - moc
   - philosophy
