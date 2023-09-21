@@ -78,7 +78,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 body {
@@ -115,6 +115,7 @@ h5 {
 
 p {
   margin-top: 0.8em;
+  line-height: 1.5em;
 }
 
 hr {
@@ -130,7 +131,7 @@ ol {
 }
 
 ul li, ol li {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
 }
 
 a {
@@ -271,7 +272,7 @@ ol {
 */
 footer {
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
