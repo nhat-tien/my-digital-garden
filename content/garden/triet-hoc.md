@@ -1,5 +1,5 @@
 ---
-title: Triết học
+title: 📖 Triết học
 date: 2023-09-19
 lastmod: 2023-09-19
 description: 

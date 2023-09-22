@@ -4,12 +4,11 @@ main: true
 ---
 
 # 🏡 Home
-## Developer
-Về kiến thức công nghệ
-### Framework
+## 💻Developer
+### 🏗 Framework
 - Laravel
-### Programing Languages
-- Javascript
+### 🧱Programing Languages
+- [JavaScript](../garden/javascript)
 ## Các trang MOC khác
 - [Âm nhạc](../garden/music)
 - [Triết học](../garden/triet-hoc)
