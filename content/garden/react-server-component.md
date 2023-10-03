@@ -3,7 +3,7 @@ title: React Server Component
 date: 2023-09-22
 lastmod: 2023-09-22
 description: React Server Component
-stage: pudding
+stage: seedling
 draft: false
 toc: false
 tags:
