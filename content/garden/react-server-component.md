@@ -3,7 +3,7 @@ title: React Server Component
 date: 2023-09-22
 lastmod: 2023-09-22
 description: React Server Component
-stage: seedling
+stage: pudding
 draft: false
 toc: false
 tags:
@@ -16,6 +16,7 @@ tags:
 - Không re-rendering, nên không sử dụng các hook life-cycle như `useEffect` và `useLayoutEffect`
 - Không chạy trong máy khách, nên không thể sử dụng `useContext`
 - Không thể sử dụng được những API chỉ có sẵn ở Browser (DOM và API Web)
+
 **Mục tiêu:**
 - Giảm kích thước gói tải.
 ## Server Side Rendering (SSR)
