@@ -28,7 +28,6 @@ tags:
 - https://flatuicolors.com/ (Palettes)
 - https://www.colorhunt.co/ (Palettes)
 - https://coolors.co/contrast-checker/112a46-acc8e5 (Kiểm tra contrast)
-- https://tailwindcss.com/docs/customizing-colors (chưa tìm hiểu kĩ)
 ## Web app for design
 - Figma
 - Canva

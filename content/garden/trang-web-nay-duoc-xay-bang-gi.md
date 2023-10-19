@@ -4,7 +4,7 @@ date: 2023-08-23
 lastmod: 2023-09-08
 description: Tổng quan về công nghệ mình dùng để xây dựng digital garden
 toc: true
-stage: pudding
+stage: budding
 tags:
   - obsidian
   - hugo

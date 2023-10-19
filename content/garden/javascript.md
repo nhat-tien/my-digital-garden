@@ -10,6 +10,11 @@ tags:
   - moc
   - javascipt
 ---
+## Khái niệm
+- Closures
+- Currying
+- Higher Order Function
+- Prototype
 ## Liên kết ngoài
 - [Sách điện tử Eloquent JavaScipt](https://eloquentjavascript.net/?fbclid=IwAR00CNTor5cWVNe1vmSqPhncpM2c_3K4gXyhAxBcemHbxJx--4uaLHvUpc4)
 - 
