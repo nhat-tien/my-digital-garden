@@ -1,6 +1,6 @@
 baseURL = "https://nhattienblog.netlify.app"
 theme = 'cozy-garden'
-title = "Tien's Garden"
+title = "NhatTien"
 languageCode = "vi-VN"
 
 ignoreFiles = [

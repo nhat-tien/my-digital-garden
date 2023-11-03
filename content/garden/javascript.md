@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 date: 2023-09-21
-lastmod: 2023-09-21
+lastmod: 2023-10-19
 description: javascipt, programing language, web
 stage: seedling
 draft: false
