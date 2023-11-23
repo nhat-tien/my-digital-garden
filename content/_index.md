@@ -12,6 +12,7 @@ main: true
 ### 🧱 Programing Languages
 - [JavaScript](../garden/javascript)
 ### 👍 Tips
+- [Bookmark những trang web hay](../garden/danh-sach-trang-web-hay-ve-cong-nghe)
 - [Tài nguyên hữu ích cho Front-end](../garden/tai-nguyen-huu-ich-cho-front-end)
 - Design Pattern
 ## Các trang MOC khác

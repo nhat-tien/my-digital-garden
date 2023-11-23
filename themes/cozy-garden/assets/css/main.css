@@ -9,12 +9,6 @@
 }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather-Black.ttf');
-  font-weight: 900;
-}
-
-@font-face {
   font-family: 'Cascadia Code';
   src: url('../fonts/CascadiaCode.ttf');
   font-family: 400;
@@ -22,12 +16,21 @@
 
 
 @font-face {
-  font-family: 'Roboto Slab';
-  src: url('../fonts/RobotoSlab-Regular.ttf');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf');
+  font-family: 400;
+}
+
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('../fonts/Inter-Bold.ttf');
   font-family: 400;
 }
 
 :root {
+  --body-text-font: "Inter";
+  --heading-text-font: "Inter Bold";
   --background_color: #ffffff;
   --text_color: #000000;
   --icon_floatmenu_color: #474747;
@@ -50,7 +53,7 @@
 *  --------     DARK THEME   -------
 */
 .dark-theme {
-  --background_color: #18181b;
+  --background_color: #030113;
   --text_color: #d9d9d9;
   --icon_floatmenu_color: #d3d3d3;
   --heading_color: #00b347;
@@ -82,7 +85,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--body-text-font), sans-serif;
   max-width: 85ch;
   margin: 0 auto;
   padding-left: 0.7rem;
@@ -96,7 +99,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Merriweather', serif;
+  font-family: var(--heading-text-font), serif;
   margin: 0.8em 0;
   color: var(--heading_color);
   font-weight: 700;
@@ -130,7 +133,8 @@ ol {
   list-style-position: outside;
 }
 
-ul li, ol li {
+ul li,
+ol li {
   margin-top: 0.5em;
 }
 
@@ -273,7 +277,10 @@ ol {
 footer {
   margin-top: 100px;
   margin-bottom: 12px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
 }
 
 footer a {
@@ -360,7 +367,7 @@ footer a {
   .frontmatter-wrapper {
     width: 100%;
   }
-  
+
   .frontmatter {
     display: flex;
     flex-direction: row;
@@ -407,6 +414,11 @@ footer a {
   border: 1px solid var(--table_border_color);
   border-radius: 10px;
   margin-bottom: 15px;
+}
+
+.post__update {
+  font-size: 0.9rem;
+  color: var(--icon_floatmenu_color);
 }
 
 .external-icon {

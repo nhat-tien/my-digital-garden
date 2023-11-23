@@ -11,7 +11,7 @@
     {{ range .Pages.ByLastmod.Reverse }}
     <div class="post">
       <a href="{{ .Permalink }}">
-        <h4>
+        <h3>
         {{ if eq .Params.stage "seedling"}}
         🌱
         {{end}}
@@ -22,9 +22,9 @@
         🌲
         {{ end}}
           {{.Title}}
-        </h4>
+        </h3>
       </a>
-      <div>
+      <div class="post__update">
         Cập nhật lần cuối:
         <i>
           <time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>

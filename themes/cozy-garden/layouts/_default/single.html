@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ if not .Params.main }}
+<article>
 <h1>{{ .Title }}</h1>
 {{ if isset .Params "stage"}}
 <div class="frontmatter-wrapper">
@@ -53,4 +54,5 @@
 {{ end }}
 {{ partial "toc.html" . }}
 {{ .Content }}
+</article>
 {{ end }}
