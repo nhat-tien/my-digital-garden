@@ -7,6 +7,7 @@ stage: seedling
 tags: 
 - editor
 ---
-- Một editor mới nổi, khá giống NeoVim, dùng trong terminal.
-- Đang được phát triển, rất đáng mong chờ phiên bản mới.
-
+<img src="https://helix-editor.com/logo.svg" alt="Helix editor"  width="150"  />
+## Overview
+- Vim-like editor
+- 

@@ -30,7 +30,7 @@
 
 :root {
   --body-text-font: "Inter";
-  --heading-text-font: "Inter Bold";
+  --heading-text-font: "cascadia code";
   --background_color: #ffffff;
   --text_color: #000000;
   --icon_floatmenu_color: #474747;
@@ -86,7 +86,7 @@ html {
 
 body {
   font-family: var(--body-text-font), sans-serif;
-  max-width: 85ch;
+  max-width: 75ch;
   margin: 0 auto;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
@@ -103,6 +103,7 @@ h5 {
   margin: 0.8em 0;
   color: var(--heading_color);
   font-weight: 700;
+  word-spacing: -4px;
 }
 
 @media only screen and (max-width: 600px) {
