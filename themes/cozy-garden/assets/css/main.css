@@ -192,6 +192,7 @@ code {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .chroma code {
@@ -233,10 +234,10 @@ a {
 */
 img {
   max-width: 100%;
-  border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 figcaption {
@@ -271,6 +272,24 @@ ol {
   font-size: 1.2rem;
   color: var(--heading_color);
 }
+
+
+/*
+*  --------     TOP-MENU      -------
+*/
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-menu__child:hover {
+  color: var(--link_color);
+}
+
+
 
 /*
 *  --------     FOOTER      -------
@@ -437,6 +456,7 @@ footer a {
   padding: 1em;
   width: 100%;
   max-width: 550px;
+  text-overflow: ellipsis;
 }
 
 .toc li {
