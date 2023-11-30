@@ -1,7 +1,7 @@
 baseURL = "https://nhattienblog.netlify.app"
 theme = 'cozy-garden'
 title = "NhatTien"
-languageCode = "vi-VN"
+languageCode = "en-US"
 
 ignoreFiles = [
     "/content/.obsidian/*",
@@ -20,7 +20,7 @@ enableEmoji = true
 
 [markup]
   [markup.highlight]
-    lineNos = true
+    # lineNos = true
     noClasses = false
     lineNumbersInTable = false
     guessSyntax = true

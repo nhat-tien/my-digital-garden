@@ -12,6 +12,7 @@ tags:
 ## Webpage
 - [bộ code css đáng xem](https://topdev.vn/blog/thanh-thao-ky-nang-css-cua-ban-voi-bo-code-cuc-chat/?amp)
 - [quy tắc css để viết code dễ quản lí](https://cssguidelin.es/)
+- [Resilient Web Design](https://resilientwebdesign.com/)
 ## Website
 - https://anonystick.com/ (tiếng việt)
 - https://codingui.dev/ (có một số mẫu ui đẹp)

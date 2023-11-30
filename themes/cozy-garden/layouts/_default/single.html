@@ -5,22 +5,22 @@
 {{ if isset .Params "stage"}}
 <div class="frontmatter-wrapper">
   <div class="frontmatter">
-    <div class="frontmatter__key">Trạng thái</div>
+    <div class="frontmatter__key">Stage</div>
     <div class="frontmatter__value">
       {{ if eq .Params.stage "seedling"}}
-      <div class="stage stage--seedling">🌱 Hạt Giống</div>
+      <div class="stage stage--seedling">🌱 Seedling</div>
       {{end}}
       {{ if eq .Params.stage "budding"}}
-      <div class="stage stage--budding">🌿 Đang Phát Triển</div>
+      <div class="stage stage--budding">🌿 Budding</div>
       {{ end}}
       {{ if eq .Params.stage "evergreen"}}
-      <div class="stage stage--evergreen">🌲 Cây Xanh</div>
+      <div class="stage stage--evergreen">🌲 Evergreen</div>
       {{ end}}
     </div>
   </div>
   {{end}}
   <div class="frontmatter">
-    <div class="frontmatter__key">Ngày tạo</div>
+    <div class="frontmatter__key">Created at</div>
     <div class="frontmatter__value">
       <i>
         <time datetime='{{ .Date.Format "02-01-2006" }}' pubdate>
@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="frontmatter">
-    <div class="frontmatter__key">Cập nhật lần cuối</div>
+    <div class="frontmatter__key">Last update</div>
     <div class="frontmatter__value">
       <i>
         <time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate>
