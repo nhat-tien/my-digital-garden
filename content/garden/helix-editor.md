@@ -14,7 +14,7 @@ tags:
 - Tree-sister integration for better syntax highlight
 - LSP support
 - Fuzzy finder
-- A lot of themes, switch between theme easily
+- A lot of themes, switch between them easily
 - Configuration by toml file 
 
 ### My Helix configuration
