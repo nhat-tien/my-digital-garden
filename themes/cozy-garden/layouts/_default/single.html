@@ -5,7 +5,7 @@
 {{ if isset .Params "stage"}}
 <div class="frontmatter-wrapper">
   <div class="frontmatter">
-    <div class="frontmatter__key">Stage</div>
+    <!-- <div class="frontmatter__key">Stage</div> -->
     <div class="frontmatter__value">
       {{ if eq .Params.stage "seedling"}}
       <div class="stage stage--seedling">🌱 Seedling</div>
@@ -50,7 +50,6 @@
     </div>
   </div>
 </div>
-<div class="divider"></div>
 {{ end }}
 {{ partial "toc.html" . }}
 {{ .Content }}

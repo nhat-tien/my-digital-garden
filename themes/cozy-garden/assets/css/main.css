@@ -30,11 +30,11 @@
 
 :root {
   --body-text-font: "Inter";
-  --heading-text-font: "cascadia code";
+  --heading-text-font: "Inter Bold";
   --background_color: #ffffff;
   --text_color: #000000;
   --icon_floatmenu_color: #474747;
-  --heading_color: #026a00;
+  --heading_color: #474747;
   --link_color: #278501;
   --sharp_symbol_color: #C7C7C7;
   --table_border_color: #adadad;
@@ -103,12 +103,16 @@ h5 {
   margin: 0.8em 0;
   color: var(--heading_color);
   font-weight: 700;
-  word-spacing: -4px;
+  /*word-spacing: -4px;*/
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h2 {
@@ -146,6 +150,10 @@ a {
 .divider {
   border: 0.1px solid var(--table_border_color);
   margin: 5px auto;
+}
+
+main {
+  margin-top: 80px;
 }
 
 
@@ -256,10 +264,19 @@ ol {
 /*
 *  --------     HEADER      -------
 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background_color);
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 }
@@ -362,6 +379,10 @@ footer a {
 *  --------     FRONTMATTER   -------
 */
 
+.frontmatter-wrapper {
+  margin-bottom: 1rem;
+}
+
 .frontmatter {
   display: inline-block;
   font-size: 0.86rem;
@@ -453,7 +474,6 @@ footer a {
   background-color: var(--table_even_row_background_color);
   padding: 1em;
   width: 100%;
-  max-width: 550px;
   text-overflow: ellipsis;
 }
 
