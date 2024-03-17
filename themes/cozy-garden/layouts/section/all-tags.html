@@ -1,8 +1,8 @@
 {{ define "main"}}
 <h2>All Tags</h2>
-<div style="margin-bottom: 10px;">
+<main>
     {{ range .Site.Taxonomies.tags }}
     <a class="tag {{ if eq .Page.Title "moc"}}tag--moc{{end}}" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp;
     {{ end }}
-</div>
+</main>
 {{ end}}

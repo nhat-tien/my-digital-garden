@@ -1,5 +1,9 @@
 {{define "main"}}
+<main>
 <div>
-    <p>Search</p>
+  <p>Search</p>
 </div>
+</main>
+{{ $fuseSearch := resources.Get "js/fuse.min.js" | minify | fingerprint}}
+<script src="{{ $fuseSearch.Permalink }}"></script>
 {{end}}

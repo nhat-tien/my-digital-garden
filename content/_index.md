@@ -7,17 +7,12 @@ main: true
 ## 💻Developer
 
 ### 🏗 Framework / Library
-- Laravel
 - [React.js](../garden/reactjs)
-- Vue.js
-- Astro.js
 
 ### 🧱 Programing Languages
 - [JavaScript](../garden/javascript)
 
 ### 📒 MOC
-- Computer Networking
-- Data Structures
 
 ### 👍 Tips
 - [Bookmark những trang web hay](../garden/danh-sach-trang-web-hay-ve-cong-nghe)

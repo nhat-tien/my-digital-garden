@@ -1,7 +1,7 @@
 ---
 title: Tài nguyên hữu ích cho Front-end
 date: 2023-10-03
-lastmod: 2023-10-03
+lastmod: 2023-12-31
 description: front-end, html, css
 stage: seedling
 draft: false
@@ -35,3 +35,5 @@ tags:
 ## Kho ảnh 
 - Unplash
 - [unDraw](https://undraw.co/) (Free illustration)
+## Tips giao diện
+- Hamberger menu: https://alvarotrigo.com/blog/hamburger-menu-css/

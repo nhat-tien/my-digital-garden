@@ -15,7 +15,7 @@
   {{else}}
   <h2>My Garden</h2>
   {{ end }}
-  <div class="blog-posts">
+  <main class="blog-posts">
     {{ range .Pages.ByLastmod.Reverse }}
     <div class="post">
       <a href="{{ .Permalink }}">
@@ -53,5 +53,5 @@
       No posts yet
     </div>
     {{ end }}
-  </div>
+  </main>
 {{ end }}
