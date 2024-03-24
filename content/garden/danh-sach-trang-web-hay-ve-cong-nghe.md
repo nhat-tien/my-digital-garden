@@ -1,11 +1,10 @@
 ---
 title: Bookmark những trang web hay
 date: 2023-11-20
-lastmod: 
-
-description: 
+lastmod: 2024-03-24
+description: Trang đánh dấu link tới những trang web về kiến thức công nghệ hay trong và ngoài nước
 img: 
-stage: seedling
+stage: budding
 draft: false
 toc: true
 tags:
@@ -29,5 +28,11 @@ tags:
 - [asciinema](https://asciinema.org/): CLI tool to record terminal, *interesting*  
 - [Github README stats](https://github.com/anuraghazra/github-readme-stats) 
 
-## Article
-- https://blog.haposoft.com/
+## Bloger Vietnam
+- [https://thuanbui.me/](https://thuanbui.me/)
+- [https://quantonganh.com/](https://quantonganh.com/)
+
+## Chia sẻ kiến thức
+- [https://blog.haposoft.com/](https://blog.haposoft.com/)
+- [https://nextlint.com/](https://nextlint.com/)
+

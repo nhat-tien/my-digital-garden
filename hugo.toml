@@ -31,4 +31,7 @@ enableEmoji = true
 [permalinks]
   [permalinks.page]
     garden = '/garden/:filename/'
-    
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+

@@ -10,7 +10,7 @@ tags:
   - moc
   - reactjs
 ---
-- 
+
 ## Concept
 - [React Server Component](../garden/react-server-component)
 - 
