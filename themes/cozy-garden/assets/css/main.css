@@ -86,6 +86,8 @@
 
 html {
   font-size: 16px;
+	scroll-padding-top: 80px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -145,6 +147,7 @@ ol {
 ul li,
 ol li {
   margin-top: 0.5em;
+	word-wrap: break-word;
 }
 
 a {
@@ -212,13 +215,17 @@ code {
   background-color: inherit;
 }
 
+.highlight {
+	margin: 1em auto;
+}
+
 /*
 *  --------     BLOCKQUOTE   -------
 */
 blockquote {
   padding: 5px;
   margin-top: 0.5em;
-  border-left: 2px solid var(--heading_color);
+  border-left: 2px solid var(--link_color);
 }
 
 

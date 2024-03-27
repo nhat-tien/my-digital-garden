@@ -14,11 +14,13 @@ tags:
 
 - Add below script to `/etc/pulse/default.pa`
 
+
 ```txt
 load-module module-echo-cancel source_name=noechosource sink_name=noechosink
 set-default-source noechosource
 set-default-sink noechosink
 ```
+
 > the `noechosource` and `noechosink` are just name, you can rename it to whatever you want
 
 - Reload pulseAudio by `pulseaudio -k` 
