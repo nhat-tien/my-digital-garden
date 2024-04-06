@@ -8,6 +8,7 @@ main: true
 
 ### 🏗 Framework / Library
 - [React.js](../garden/reactjs)
+- [Laravel](../garden/)  
 
 ### 🧱 Programing Languages
 - [JavaScript](../garden/javascript)

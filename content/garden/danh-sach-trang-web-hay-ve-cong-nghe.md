@@ -28,7 +28,7 @@ tags:
 - [asciinema](https://asciinema.org/): CLI tool to record terminal, *interesting*  
 - [Github README stats](https://github.com/anuraghazra/github-readme-stats) 
 
-## Bloger Vietnam
+## Blogger Vietnam
 - [https://thuanbui.me/](https://thuanbui.me/)
 - [https://quantonganh.com/](https://quantonganh.com/)
 
