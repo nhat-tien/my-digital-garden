@@ -8,6 +8,7 @@ stage: seedling
 draft: false
 toc: true
 tags:
+  - MOC
   - laravel
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Bookmark những trang web hay
 date: 2023-11-20
-lastmod: 2024-03-24
+lastmod: 2024-04-08 
 description: Trang đánh dấu link tới những trang web về kiến thức công nghệ hay trong và ngoài nước
 img: 
 stage: budding
@@ -27,6 +27,7 @@ tags:
 - [Spline 3D](https://spline.design/): 3D design tool
 - [asciinema](https://asciinema.org/): CLI tool to record terminal, *interesting*  
 - [Github README stats](https://github.com/anuraghazra/github-readme-stats) 
+- [TablePlus](https://tableplus.com/) 
 
 ## Blogger Vietnam
 - [https://thuanbui.me/](https://thuanbui.me/)
