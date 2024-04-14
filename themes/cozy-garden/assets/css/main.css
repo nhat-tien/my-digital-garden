@@ -57,7 +57,7 @@
 *  --------     DARK THEME   -------
 */
 .dark-theme {
-  --background_color: #030113;
+  --background_color: #1e2129;
   --text_color: #d9d9d9;
   --icon_floatmenu_color: #d3d3d3;
   --heading_color: #00b347;
@@ -474,6 +474,16 @@ footer a {
 
 .external-icon {
   width: 20px;
+}
+
+/*
+*  ------- Button ------
+*/
+
+.outline-button {
+	border: 1px solid var(--table_border_color);
+	padding: 0.3em;
+	border-radius: 10px;
 }
 
 

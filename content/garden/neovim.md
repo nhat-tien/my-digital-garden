@@ -8,9 +8,10 @@ stage: seedling
 draft: false
 toc: true
 tags: 
-  - MOC
+  - moc
   - neovim
 ---
 
 - [Neovim Awesome](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/) 
+- [My Neovim Config](https://github.com/nhat-tien/dotfiles/tree/main/nvim) 
 

@@ -1,13 +1,17 @@
 {{ define "main" }}
-  {{ if .Data.Singular }}
-  <h3 style="margin-bottom:10px">Notes have tag "{{ .Title }}"</h3>
-  <div style="margin-bottom:10px">
-    <a href="{{ "garden" | relURL }}" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+<main>  
+	{{ if .Data.Singular }}
+	<h3 style="margin-bottom:10px">Notes that have tag <span class="tag {{ if eq .Title "Moc"}} tag--moc{{end}}">{{ .Title }}</span></h3>
+	{{ if eq .Title "Moc"}}
+	<dfn>It's mean Map Of Content</dfn>
+	{{end}}
+  <div style="margin-bottom:10px;margin-top:10px">
+    <a href="{{ "all-tags" | relURL }}" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+			<div class="outline-button">
       <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17 12C17 11.4477 16.5523 11 16 11H8C7.44772 11 7 11.4477 7 12C7 12.5523 7.44771 13 8 13H16C16.5523 13 17 12.5523 17 12Z" fill="#0F0F0F"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 20.9932C7.03321 20.9932 3.00683 16.9668 3.00683 12C3.00683 7.03321 7.03321 3.00683 12 3.00683C16.9668 3.00683 20.9932 7.03321 20.9932 12C20.9932 16.9668 16.9668 20.9932 12 20.9932Z" fill="#0F0F0F"/>
+        <path d="M17 12C17 11.4477 16.5523 11 16 11H8C7.44772 11 7 11.4477 7 12C7 12.5523 7.44771 13 8 13H16C16.5523 13 17 12.5523 17 12Z" fill="var(--text_color)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 20.9932C7.03321 20.9932 3.00683 16.9668 3.00683 12C3.00683 7.03321 7.03321 3.00683 12 3.00683C16.9668 3.00683 20.9932 7.03321 20.9932 12C20.9932 16.9668 16.9668 20.9932 12 20.9932Z" fill="var(--text_color)"/>
       </svg>
-      <div>
         Remove filter
       </div> 
     </a>
@@ -15,7 +19,7 @@
   {{else}}
   <h2>My Garden</h2>
   {{ end }}
-  <main class="blog-posts">
+  <div class="blog-posts">
     {{ range .Pages.ByLastmod.Reverse }}
     <div class="post">
       <a href="{{ .Permalink }}">
@@ -33,7 +37,7 @@
         </h3>
       </a>
       <div class="post__update">
-        Last update:
+        Last updated:
         <i>
           <time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>
             {{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
@@ -42,7 +46,7 @@
       </div>
       <div style="margin-top: 5px;">
         {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}" class="tag {{ if eq .LinkTitle "moc"}}tag--moc{{end}}">
+          <a href="{{ .Permalink }}" class="tag {{ if eq .LinkTitle "Moc" }}tag--moc{{end}}">
             {{ .LinkTitle }}
           </a>
         {{ end }}
@@ -53,5 +57,6 @@
       No posts yet
     </div>
     {{ end }}
-  </main>
+  </div>
+</main>
 {{ end }}

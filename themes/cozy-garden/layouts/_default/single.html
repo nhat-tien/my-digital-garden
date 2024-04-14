@@ -44,7 +44,7 @@
         <div class="frontmatter__key">Tags</div>
         <div class="frontmatter__value">
         {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}" class="tag {{ if eq .Page.Title "moc"}}tag--moc{{end}}">
+          <a href="{{ .Permalink }}" class="tag {{ if eq .Page.Title "Moc"}}tag--moc{{end}}">
             {{ .LinkTitle }}
           </a>
         {{ end }}

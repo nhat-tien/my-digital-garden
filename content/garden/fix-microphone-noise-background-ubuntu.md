@@ -4,10 +4,12 @@ date: 2024-03-26
 lastmod: 2024-03-26 
 description: 
 img: 
-stage: seedling
+stage: budding 
 draft: false
 toc: false
 tags:
+  - linux
+  - fix
 ---
 
 ## Solution
