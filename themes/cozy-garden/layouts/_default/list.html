@@ -21,37 +21,37 @@
   {{ end }}
   <div class="blog-posts">
     {{ range .Pages.ByLastmod.Reverse }}
-    <div class="post">
-      <a href="{{ .Permalink }}">
-        <h3>
-        {{ if eq .Params.stage "seedling"}}
-        🌱
-        {{end}}
-        {{ if eq .Params.stage "budding"}}
-        🌿
-        {{ end}}
-        {{ if eq .Params.stage "evergreen"}}
-        🌲
-        {{ end}}
-          {{.Title}}
-        </h3>
-      </a>
-      <div class="post__update">
-        Last updated:
-        <i>
-          <time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>
-            {{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
-          </time>
-        </i>
-      </div>
-      <div style="margin-top: 5px;">
-        {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}" class="tag {{ if eq .LinkTitle "Moc" }}tag--moc{{end}}">
-            {{ .LinkTitle }}
-          </a>
-        {{ end }}
-      </div>
-    </div>
+		<div class="post">
+			<a href="{{ .Permalink }}">
+						<h3>
+						{{ if eq .Params.stage "seedling"}}
+						🌱
+						{{end}}
+						{{ if eq .Params.stage "budding"}}
+						🌿
+						{{ end}}
+						{{ if eq .Params.stage "evergreen"}}
+						🌲
+						{{ end}}
+							{{.Title}}
+						</h3>
+					<div class="post__update">
+						Last updated:
+						<i>
+							<time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>
+								{{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
+							</time>
+						</i>
+					</div>
+					<div style="margin-top: 5px;">
+						{{ range (.GetTerms "tags") }}
+							<a href="{{ .Permalink }}" class="tag {{ if eq .LinkTitle "Moc" }}tag--moc{{end}}">
+								{{ .LinkTitle }}
+							</a>
+						{{ end }}
+					</div>
+			</a>
+				</div>
     {{ else }}
     <div>
       No posts yet
