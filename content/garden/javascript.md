@@ -16,6 +16,6 @@ tags:
 - Higher Order Function
 - Prototype
 ## Tip
-- [text](../garden/1loc-helpful-in-javascript)
+- [Collection of one-liner-helpful code](../garden/1loc-helpful-in-javascript)
 ## Liên kết ngoài
 - [Sách điện tử Eloquent JavaScipt](https://eloquentjavascript.net/?fbclid=IwAR00CNTor5cWVNe1vmSqPhncpM2c_3K4gXyhAxBcemHbxJx--4uaLHvUpc4)

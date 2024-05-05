@@ -11,15 +11,15 @@ tags:
   - linux
 ---
 
-## What is `/dev/null`?
+## 1. What is `/dev/null`?
 
 Trong hệ thống Linux, device được lưu trữ trong thư mục `/dev`. Có hai loại file device là physical và virtual. `/dev/null` là một virtual null devices **được dùng để loại bỏ bất kì output nào ta redirect tới nó**.
 
-## How to use
+## 2. How to use
 
 output can be `stdout` or `stderr`
 
-### with `stdout`
+### 2.1 With `stdout`
 
 This will discard `echo` message 
 
@@ -27,7 +27,7 @@ This will discard `echo` message
 echo 'Hello from JournalDev' > /dev/null
 ```
 
-### with `stderr`
+### 2.2 With `stderr`
 
 Discard error output
 ```bash

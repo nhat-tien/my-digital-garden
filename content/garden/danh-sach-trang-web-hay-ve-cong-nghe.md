@@ -36,4 +36,5 @@ tags:
 ## Chia sẻ kiến thức
 - [https://blog.haposoft.com/](https://blog.haposoft.com/)
 - [https://nextlint.com/](https://nextlint.com/)
+- Linux [https://docs.rockylinux.org/](https://docs.rockylinux.org/) 
 

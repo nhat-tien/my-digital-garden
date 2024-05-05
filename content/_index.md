@@ -12,6 +12,7 @@ main: true
 
 ### 🧱 Programing Languages
 - [JavaScript](garden/javascript)
+- [Rust](garden/rust) 
 
 ### 📒 MOC
 
