@@ -506,3 +506,23 @@ footer a {
 .toc__heading {
   font-weight: 600;
 }
+
+
+/*
+*    ----- SEARCH -----
+*/
+
+.search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#search-query {
+	width: 80%;
+	min-width: 250px;
+	font-size: 1rem;
+	border-radius: 5px;
+	padding: 0.5em 0.5em 0.5em 1em;
+	border: 1px solid var(--table_border_color);
+}

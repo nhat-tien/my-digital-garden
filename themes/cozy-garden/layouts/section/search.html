@@ -1,9 +1,13 @@
 {{define "main"}}
 <main>
-<div>
-  <p>Search</p>
+<div class="search-container">
+    <input type="search" id="search-query" placeholder="Nhập để bắt đầu tìm...." oninput="executeSearch()">
+    <div id="search-results"></div>
 </div>
-</main>
-{{ $fuseSearch := resources.Get "js/fuse.min.js" | minify | fingerprint}}
+{{ $fuseSearch := resources.Get "js/fuse.min.js" }}
 <script src="{{ $fuseSearch.Permalink }}"></script>
+{{ $markjs := resources.Get "js/mark.min.js" }}
+<script src="{{ $markjs.Permalink }}"></script>
+{{ $search := resources.Get "js/search.js" | minify | fingerprint}}
+<script src="{{ $search.Permalink }}"></script>
 {{end}}

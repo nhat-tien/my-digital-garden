@@ -14,8 +14,6 @@ tags:
 ### Typescript
 - [React Typescript](https://react-typescript-cheatsheet.netlify.app/)
 
-### Rust
-- [Rustvn](https://www.rustvn.com/)
 
 ## Algorithms
 - [VietCodes](https://vietcodes.github.io/)

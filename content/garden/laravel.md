@@ -11,7 +11,8 @@ tags:
   - MOC
   - laravel
 ---
-
+## Security
+- [https://www.stackhawk.com/blog/laravel-csrf-protection-guide/](https://www.stackhawk.com/blog/laravel-csrf-protection-guide/)
 ## Repo Tips
 - [Laravel Tips](https://github.com/LaravelDaily/laravel-tips) 
 - [Laravel Best Practices](https://github.com/alexeymezenin/laravel-best-practices) 
