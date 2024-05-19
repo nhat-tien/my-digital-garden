@@ -17,10 +17,5 @@ Trang blog này mình vẫn đang thử nghiệm với cấu trúc của một [
 - Âm nhạc
 - Triết
 - ...(và có lẽ còn nhiều hơn nữa :)))
-### Contact
-
-<a href="https://github.com/nhat-tien">
-<img align="left" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-</a>
 
 

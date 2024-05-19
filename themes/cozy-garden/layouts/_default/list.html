@@ -35,11 +35,12 @@
 						{{ end}}
 							{{.Title}}
 						</h3>
+		</a>
 					<div class="post__update">
 						Last updated:
 						<i>
-							<time datetime='{{ .Lastmod.Format "02-01-2006" }}' pubdate>
-								{{ .Lastmod.Format (default "02-01-2006" .Site.Params.dateFormat) }}
+							<time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate>
+								{{ .Lastmod.Format (default "02/01/2006" .Site.Params.dateFormat) }}
 							</time>
 						</i>
 					</div>
@@ -50,7 +51,6 @@
 							</a>
 						{{ end }}
 					</div>
-			</a>
 				</div>
     {{ else }}
     <div>

@@ -526,3 +526,16 @@ footer a {
 	padding: 0.5em 0.5em 0.5em 1em;
 	border: 1px solid var(--table_border_color);
 }
+
+#search-results {
+	width: 100%;
+  display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+}
+
