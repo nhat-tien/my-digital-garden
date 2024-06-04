@@ -35,7 +35,9 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-    // Old: 'timezone' => 'UTC',
+    // Before
+    // 'timezone' => 'UTC',
+    // After
     'timezone' => 'Asia/Ho_Chi_Minh',
 ]
 ```

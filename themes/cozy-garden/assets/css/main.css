@@ -36,7 +36,7 @@
   --body-text-font: "Inter";
   --heading-text-font: "Inter Bold";
   --background_color: #ffffff;
-  --text_color: #000000;
+  --text_color: #3E3939;
   --icon_floatmenu_color: #474747;
   --heading_color: #474747;
   --link_color: #278501;
@@ -106,7 +106,7 @@ h3,
 h4,
 h5 {
   font-family: var(--heading-text-font), serif;
-  margin: 0.8em 0;
+  margin: 1em 0;
   color: var(--heading_color);
   font-weight: 700;
   /*word-spacing: -4px;*/
@@ -160,7 +160,7 @@ a {
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 
@@ -255,6 +255,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+	border-radius: 10px;
 }
 
 figcaption {

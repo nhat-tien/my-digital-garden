@@ -5,20 +5,20 @@
   <h1>{{ .Title }}</h1>
   {{ if isset .Params "stage"}}
   <div class="frontmatter-wrapper">
-    <div class="frontmatter">
-      <!-- <div class="frontmatter__key">Stage</div> -->
-      <div class="frontmatter__value">
-        {{ if eq .Params.stage "seedling"}}
-        <div class="stage stage--seedling">🌱 Seedling</div>
-        {{end}}
-        {{ if eq .Params.stage "budding"}}
-        <div class="stage stage--budding">🌿 Budding</div>
-        {{ end}}
-        {{ if eq .Params.stage "evergreen"}}
-        <div class="stage stage--evergreen">🌲 Evergreen</div>
-        {{ end}}
-      </div>
-    </div>
+    <!-- <div class="frontmatter"> -->
+    <!--   <!-- <div class="frontmatter__key">Stage</div> -->
+    <!--   <div class="frontmatter__value"> -->
+    <!--     {{ if eq .Params.stage "seedling"}} -->
+    <!--     <div class="stage stage--seedling">🌱 Seedling</div> -->
+    <!--     {{end}} -->
+    <!--     {{ if eq .Params.stage "budding"}} -->
+    <!--     <div class="stage stage--budding">🌿 Budding</div> -->
+    <!--     {{ end}} -->
+    <!--     {{ if eq .Params.stage "evergreen"}} -->
+    <!--     <div class="stage stage--evergreen">🌲 Evergreen</div> -->
+    <!--     {{ end}} -->
+    <!--   </div> -->
+    <!-- </div> -->
     {{end}}
     <div class="frontmatter">
       <div class="frontmatter__key">Created at</div>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="frontmatter frontmatter--tags">
-        <div class="frontmatter__key">Tags</div>
+        <div class="frontmatter__key"></div>
         <div class="frontmatter__value">
         {{ range (.GetTerms "tags") }}
           <a href="{{ .Permalink }}" class="tag {{ if eq .Page.Title "Moc"}}tag--moc{{end}}">

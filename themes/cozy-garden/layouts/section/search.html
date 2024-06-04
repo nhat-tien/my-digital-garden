@@ -4,7 +4,7 @@
     <input type="search" id="search-query" placeholder="Nhập để bắt đầu tìm...." />
     <div id="search-results"></div>
 </div>
+<script defer src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
 {{ $search := resources.Get "js/search.js" | minify | fingerprint}}
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
 <script src="{{ $search.Permalink }}"></script>
 {{end}}
