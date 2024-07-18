@@ -106,7 +106,7 @@ h3,
 h4,
 h5 {
   font-family: var(--heading-text-font), serif;
-  margin: 1em 0;
+  margin: 1em 0 0.3em 0;
   color: var(--heading_color);
   font-weight: 700;
   /*word-spacing: -4px;*/
@@ -405,6 +405,7 @@ footer a {
 
 .frontmatter__key {
   display: inline-block;
+	font-weight: 600;
 }
 
 .frontmatter__value {
@@ -507,8 +508,6 @@ footer a {
 .toc__heading {
   font-weight: 600;
 }
-
-
 /*
 *    ----- SEARCH -----
 */
