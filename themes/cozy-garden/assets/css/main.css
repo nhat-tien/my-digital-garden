@@ -3,31 +3,29 @@
 */
 
 @font-face {
-  font-family: 'Oleo Script';
-  src: url('../fonts/OleoScript-Bold.ttf');
+  font-family: "Oleo Script";
+  src: url("../fonts/OleoScript-Bold.ttf");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cascadia Code';
-  src: url('../fonts/CascadiaCode.ttf');
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode.ttf");
   font-family: 400;
   font-display: swap;
 }
 
-
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Regular.ttf');
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
   font-family: 400;
   font-display: swap;
 }
 
-
 @font-face {
-  font-family: 'Inter Bold';
-  src: url('../fonts/Inter-Bold.ttf');
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter-Bold.ttf");
   font-family: 400;
   font-display: swap;
 }
@@ -35,14 +33,14 @@
 :root {
   --body-text-font: "Inter";
   --heading-text-font: "Inter Bold";
-  --background_color: #ffffff;
-  --text_color: #3E3939;
+  --background_color: #f1eded;
+  --text_color: #3e3939;
   --icon_floatmenu_color: #474747;
   --heading_color: #474747;
   --link_color: #278501;
-  --sharp_symbol_color: #C7C7C7;
+  --sharp_symbol_color: #c7c7c7;
   --table_border_color: #adadad;
-  --table_even_row_background_color: #f2f2f2;
+  --table_even_row_background_color: #d3d1d1;
   --table_heading_background_color: #c3eac1;
   --table_heading_text_color: #303030;
   --hr_color: #afafaf;
@@ -77,7 +75,6 @@
 
 /* -------------------------------- */
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -86,8 +83,8 @@
 
 html {
   font-size: 16px;
-	scroll-padding-top: 80px;
-	scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -126,7 +123,6 @@ h1 {
   }
 }
 
-
 p {
   margin-top: 1em;
   line-height: 1.5em;
@@ -147,7 +143,7 @@ ol {
 ul li,
 ol li {
   margin-top: 0.5em;
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a {
@@ -162,7 +158,6 @@ a {
 main {
   margin-top: 100px;
 }
-
 
 /*
 *  --------     TABLE   -------
@@ -179,7 +174,7 @@ table tr:nth-child(even) {
 table td,
 table th {
   border: 1.5px solid var(--table_border_color);
-  padding: 0.2em
+  padding: 0.2em;
 }
 
 table th {
@@ -188,12 +183,11 @@ table th {
   color: var(--table_heading_text_color);
 }
 
-
 /*
 *  --------     HIGHLIGHT   -------
 */
 code {
-  font-family: 'Cascadia Code', monospace;
+  font-family: "Cascadia Code", monospace;
   display: inline-block;
   padding: 0 0.3em;
   background-color: var(--code_background_color);
@@ -216,7 +210,7 @@ code {
 }
 
 .highlight {
-	margin: 1em auto;
+  margin: 1em auto;
 }
 
 /*
@@ -228,12 +222,10 @@ blockquote {
   border-left: 2px solid var(--link_color);
 }
 
-
 blockquote p {
   margin-top: 0;
   margin-left: 5px;
 }
-
 
 /*
 *  --------     LINK   -------
@@ -255,7 +247,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 figcaption {
@@ -294,13 +286,18 @@ header {
 }
 
 .header__home {
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--heading_color);
 }
 
-
+@media only screen and (max-width: 600px) {
+	.header {
+		justify-content: space-between;
+		padding: 10px 20px;
+	}
+}
 /*
 *  --------     TOP-MENU      -------
 */
@@ -312,11 +309,50 @@ header {
   gap: 15px;
 }
 
+.top-menu__child::after {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: var(--link_color);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
 .top-menu__child:hover {
   color: var(--link_color);
 }
 
+.top-menu__child:hover::after {
+	opacity: 1;
+  width: 100%;
+}
 
+.top-menu--mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+   .top-menu {
+		display: none;
+	}
+	.top-menu--mobile {
+		display: block;
+		position: relative;
+	}
+	.menu-icon {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.menu-icon__bar {
+    height: 4px;
+		background-color: var(--heading_color);
+		border-radius: 99px;
+		width: 30px;
+	}
+}
 
 /*
 *  --------     FOOTER      -------
@@ -405,7 +441,7 @@ footer a {
 
 .frontmatter__key {
   display: inline-block;
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .frontmatter__value {
@@ -428,9 +464,7 @@ footer a {
     gap: 0.5em;
     font-size: 0.86rem;
   }
-
 }
-
 
 /*
 *  --------     STAGE   -------
@@ -483,12 +517,10 @@ footer a {
 */
 
 .outline-button {
-	border: 1px solid var(--table_border_color);
-	padding: 0.3em;
-	border-radius: 10px;
+  border: 1px solid var(--table_border_color);
+  padding: 0.3em;
+  border-radius: 10px;
 }
-
-
 
 /*
 *    ----- TOC ------
@@ -513,30 +545,29 @@ footer a {
 */
 
 .search-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #search-query {
-	width: 100%;
-	min-width: 250px;
-	font-size: 1rem;
-	border-radius: 5px;
-	padding: 0.5em 0.5em 0.5em 1em;
-	border: 1px solid var(--table_border_color);
+  width: 100%;
+  min-width: 250px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border: 1px solid var(--table_border_color);
 }
 
 #search-results {
-	width: 100%;
-	min-height: 60vh;
+  width: 100%;
+  min-height: 60vh;
   display: flex;
-	flex-direction: column;
-	justify-content: start;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .logo {
-	width: 30px;
-	height: 30px;
+  width: 30px;
+  height: 30px;
 }
-
