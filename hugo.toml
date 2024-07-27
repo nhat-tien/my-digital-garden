@@ -17,7 +17,7 @@ enableEmoji = true
 
 [params]
   favicon = "/images/favicon.png"
-  dateFormat = "02/01/2006"
+  dateFormat = "02-01-2006"
 
 [markup]
   [markup.highlight]

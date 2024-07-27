@@ -48,7 +48,9 @@
   --code_block_background_color: #1a1b26;
   --tag_background_color: #c3eac1;
   --tag_text_color: #000000;
+	--tag_border_color:#11950a;
   --tag_moc_bg_color: #efbc89;
+	--tag_moc_border_color: #ab5600;
 }
 
 /*
@@ -85,9 +87,12 @@ html {
   font-size: 16px;
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
+	min-height: 100vh;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
   font-family: var(--body-text-font), sans-serif;
   max-width: 75ch;
   margin: 0 auto;
@@ -95,6 +100,7 @@ body {
   padding-right: 0.7rem;
   background-color: var(--background_color);
   color: var(--text_color);
+	min-height: 100vh;
 }
 
 h1,
@@ -111,6 +117,7 @@ h5 {
 
 h1 {
   font-size: 2.5rem;
+	padding: 2.3em 0 0.05em 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,7 +163,8 @@ a {
 }
 
 main {
-  margin-top: 100px;
+  /* margin-top: 100px; */
+	flex: 1;
 }
 
 /*
@@ -272,8 +280,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--background_color);
   width: 100%;
+	background-color: var(--background_color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -358,8 +366,7 @@ header {
 *  --------     FOOTER      -------
 */
 footer {
-  margin-top: 100px;
-  margin-bottom: 12px;
+	padding: 3em 0 1em 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -416,11 +423,13 @@ footer a {
   background-color: var(--tag_background_color);
   color: var(--tag_text_color);
   border-radius: 0.5em;
+	border: 1px solid var(--tag_border_color);
   margin-bottom: 5px;
 }
 
 .tag--moc {
   background-color: var(--tag_moc_bg_color);
+	border: 1px solid var(--tag_moc_border_color);
   text-transform: uppercase;
 }
 
@@ -429,7 +438,7 @@ footer a {
 */
 
 .frontmatter-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .frontmatter {
@@ -441,7 +450,6 @@ footer a {
 
 .frontmatter__key {
   display: inline-block;
-  font-weight: 600;
 }
 
 .frontmatter__value {
@@ -457,13 +465,13 @@ footer a {
     width: 100%;
   }
 
-  .frontmatter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0.5em;
-    font-size: 0.86rem;
-  }
+  /* .frontmatter { */
+  /*   display: flex; */
+  /*   flex-direction: row; */
+  /*   justify-content: space-between; */
+  /*   gap: 0.5em; */
+  /*   font-size: 0.86rem; */
+  /* } */
 }
 
 /*
@@ -504,7 +512,8 @@ footer a {
 }
 
 .post__update {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+	font-weight: 600;
   color: var(--icon_floatmenu_color);
 }
 
@@ -528,6 +537,7 @@ footer a {
 
 .toc {
   background-color: var(--table_even_row_background_color);
+	border-radius: 10px;
   padding: 1em;
   width: 100%;
   text-overflow: ellipsis;

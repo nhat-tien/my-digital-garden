@@ -24,17 +24,17 @@
       <div class="frontmatter__key">Created at</div>
       <div class="frontmatter__value">
         <i>
-          <time datetime='{{ .Date.Format "02/01/2006" }}' pubdate>
+          <time datetime='{{ .Date.Format "02/01/2006" }}' pubdate style="font-weight: 600;">
             {{ .Date.Format (default "02/01/2006" .Site.Params.dateFormat) }}
           </time>
         </i>
       </div>
     </div>
     <div class="frontmatter">
-      <div class="frontmatter__key">Last modified</div>
+      <div class="frontmatter__key">Last updated</div>
       <div class="frontmatter__value">
         <i>
-          <time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate>
+          <time datetime='{{ .Lastmod.Format "02/01/2006" }}' pubdate style="font-weight: 600;">
             {{ .Lastmod.Format (default "02/01/2006" .Site.Params.dateFormat) }}
           </time>
         </i>
@@ -51,6 +51,7 @@
       </div>
     </div>
   </div>
+	<hr />
   {{ end }}
   {{ partial "toc.html" . }}
   {{ .Content }}
