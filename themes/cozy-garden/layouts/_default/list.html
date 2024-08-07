@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>  
 	{{ if .Data.Singular }}
-	<h3 style="margin-bottom:10px">Notes that have tag <span class="tag {{ if eq .Title "Moc"}} tag--moc{{end}}">{{ .Title }}</span></h3>
+	<h3 style="margin-bottom:10px">Notes have tag <span class="tag {{ if eq .Title "Moc"}} tag--moc{{end}}">{{ .Title }}</span></h3>
 	{{ if eq .Title "Moc"}}
 	<dfn>It's mean Map Of Content</dfn>
 	{{end}}

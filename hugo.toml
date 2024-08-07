@@ -1,4 +1,4 @@
-baseURL = "https://nhattienblog.netlify.app"
+baseURL = "https://cozygarden.netlify.app"
 theme = 'cozy-garden'
 title = "Tien's Garden"
 languageCode = "en-US"

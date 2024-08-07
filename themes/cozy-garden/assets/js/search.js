@@ -16,7 +16,7 @@ function render(listOfResult) {
   let searchItem = "";
   for (result of listOfResult) {
     searchItem += `
-      <a href="${result.item.permalink}">
+      <a class="post" href="${result.item.permalink}">
           <h3 class="search-item">${result.item.title}</h3>
 		  </a>`;
   }
