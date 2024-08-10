@@ -30,6 +30,7 @@ echo 'Hello from JournalDev' > /dev/null
 ### 2.2 With `stderr`
 
 Discard error output
+
 ```bash
 cat --INCORRECT_OPTION > /dev/null 2>/dev/null
 ```
