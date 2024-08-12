@@ -26,6 +26,6 @@ function render(listOfResult) {
 fetch("/index.json")
   .then((res) => res.json())
   .then((data) => (index = data))
-  .catch((e) => console.log("Something went wrong with search feature"));
+  .catch((e) => console.error("Something went wrong with search feature"));
 
 searchBox.addEventListener("input", () => executeSearch());

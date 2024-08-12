@@ -18,6 +18,10 @@ Bookmark của tôi về thứ những thứ gì đó mà tôi thấy hay trên 
 
 - [https://protiumx.dev/](https://protiumx.dev/)
 
+- [https://www.server-world.info/en](https://www.server-world.info/en)
+
+- [https://ssl-config.mozilla.org/](https://ssl-config.mozilla.org/)
+
 ## Pixel editor
 - Pixelorama
 - Libresprite

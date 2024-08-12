@@ -1,10 +1,10 @@
 ---
 title: Laravel
 date: 2024-04-06 
-lastmod: 2024-04-06
+lastmod: 2024-08-11
 description: Những thứ hay ho liên quan đến Laravel 
 img: 
-stage: seedling
+stage: budding
 draft: false
 toc: true
 tags:

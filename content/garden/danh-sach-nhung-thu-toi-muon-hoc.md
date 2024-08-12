@@ -1,5 +1,5 @@
 ---
-title: "Danh sách những thứ tôi muốn tìm hiểu"
+title: "List of things I want to learn about"
 date: 2024-03-26 
 lastmod: 2024-03-26 
 description: 
@@ -10,6 +10,5 @@ toc: true
 tags:
 ---
 
-## Sẽ học trong thời gian gần
+- hyper-v
 
-## Có hứng thú 
