@@ -1,5 +1,5 @@
 ---
-title: Something cool 
+title: Some things cool 
 date: 2024-04-24 
 lastmod: 2024-04-24 
 description: 

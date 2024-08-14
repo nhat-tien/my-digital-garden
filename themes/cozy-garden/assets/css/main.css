@@ -34,9 +34,9 @@
   --body-text-font: "Inter";
   --heading-text-font: "Inter Bold";
   --background_color: #f1eded;
-  --text_color: #3e3939;
+  --text_color: #171D31;
   --icon_floatmenu_color: #474747;
-  --heading_color: #474747;
+  --heading_color: #183e22;
   --link_color: #278501;
   --sharp_symbol_color: #c7c7c7;
   --table_border_color: #adadad;
@@ -51,6 +51,7 @@
   --tag_border_color: #11950a;
   --tag_moc_bg_color: #efbc89;
   --tag_moc_border_color: #ab5600;
+  --header_bg_color: #e3e3e3;
 }
 
 /*
@@ -73,6 +74,7 @@
   --tag_background_color: #2b462a;
   --tag_text_color: #eeeded;
   --tag_moc_bg_color: #56422d;
+  --header_bg_color: #0f131c;
 }
 
 /* -------------------------------- */
@@ -282,7 +284,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--background_color);
+  background-color: var(--header_bg_color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -354,9 +356,9 @@ header {
 
 .top-menu--mobile__content {
   position: absolute;
-  transform: translateY(-180px);     
+  transform: translateY(-190px);     
   transition: 0.3s linear;
-  background-color: var(--background_color);
+  background-color: var(--header_bg_color);
   width: 100vw;
   right: -20px;
   z-index: -10;
@@ -388,7 +390,7 @@ header {
 .menu-icon__checkbox:checked ~ .top-menu--mobile__overlay {
   opacity: 0.6;
   display: block;
-  top: 45px;
+  top: 30px;
 }
 
 
