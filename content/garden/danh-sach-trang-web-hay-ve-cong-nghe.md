@@ -37,6 +37,8 @@ tags:
 ## Blogger Vietnam
 - [https://thuanbui.me/](https://thuanbui.me/)
 - [https://quantonganh.com/](https://quantonganh.com/)
+- [https://datvu2k.netlify.app/](https://datvu2k.netlify.app/)
+- [https://manhhomienbienthuy.github.io/](https://manhhomienbienthuy.github.io/)
 
 ## Chia sẻ kiến thức
 - [https://blog.haposoft.com/](https://blog.haposoft.com/)
