@@ -4,3 +4,8 @@
 
 [build.environment]
   HUGO_VERSION = "0.139.0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    access-control-allow-origin = "*"
